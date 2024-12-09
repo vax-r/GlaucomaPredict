@@ -1,0 +1,13 @@
+opencv-contrib-python
+tqdm
+torch
+torchvision
+torchaudio
+numpy
+pandas
+pyyaml
+pytest
+scikit-learn
+scipy
+matplotlib
+seaborn
