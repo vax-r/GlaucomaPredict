@@ -11,7 +11,7 @@ def main():
     # Setup paths
     project_root = Path(__file__).parent.parent
     config_path = project_root / "configs" / "config.yaml"
-    model_path = project_root / "models" / "checkpoints" / "model_epoch_15.pt"
+    model_path = project_root / "models" / "checkpoints" / "model_epoch_100.pt"
     results_dir = project_root / "reports" / "results"
     results_dir.mkdir(parents=True, exist_ok=True)
     
