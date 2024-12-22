@@ -32,18 +32,22 @@ def main():
     )
     
     # Data loaders
+    # num_workers should be decreased if utilizing docker containers
     train_loader = DataLoader(
         train_dataset,
         batch_size=config['batch_size'],
         shuffle=True,
         num_workers=8,
         pin_memory=True
+        # persistent_workers=True # Turn this on when using docker
     )
     val_loader = DataLoader(
         val_dataset,
         batch_size=config['batch_size'],
         shuffle=False,
-        num_workers=4
+        num_workers=8,
+        pin_memory=True
+        # persistent_workers=True # Turn this on when using docker
     )
     
     # Model
